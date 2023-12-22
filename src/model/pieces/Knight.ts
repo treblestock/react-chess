@@ -1,8 +1,10 @@
 import { Cell } from "../BoardCell";
 import { Colors } from "../Collors";
 import { Piece, Pieces } from "./Piece";
-import blackLogo from '../../assets/black-knight.png'
-import whiteLogo from '../../assets/white-knight.png'
+// import blackLogo from '../../assets/black-knight.png'
+// import whiteLogo from '../../assets/white-knight.png'
+const blackLogo = import.meta.env.BASE_URL + 'assets/black-knight.png'
+const whiteLogo = import.meta.env.BASE_URL + 'assets/white-knight.png'
 
 export class Knight extends Piece {
   constructor(color: Colors, cell: Cell) {

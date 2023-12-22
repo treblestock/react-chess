@@ -10,6 +10,7 @@ interface IBoardCellProps {
 
 const BoardCell: FC<IBoardCellProps> = ({cell, selectedCell, click}) => {
   
+  
   return (
     <div 
       className={[
